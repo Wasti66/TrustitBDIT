@@ -22,15 +22,15 @@
     </head>
     <body>
        <!-- header -->
-       <header class="bg-[#211e3b] w-full fixed top-0 left-0 z-50 transition-all duration-300" id="affix-nav">
+       <header class="bg-[#211e3b] w-full fixed top-0 left-0 z-50 transition-all duration-300 py-3" id="affix-nav">
             <nav class="container px-8 lg:px-0 mx-auto flex items-center justify-between">
                 <!-- logo -->
                 <a href="#">
-                    <img class="h-20 w-20" src="images/logo.png" alt="logo">
+                    <img class="h-16 w-16" src="images/logo.png" alt="logo">
                 </a>
                 <!-- mobile button -->
                 <button onclick="toggleMenu()" class="text-white lg:hidden">
-                    <i class="fa-solid fa-bars fa-2x"></i>
+                    <i id="menuIcon" class="fa-solid fa-bars fa-2x"></i>
                 </button>
                 <!-- menu -->
                 <div id="menu"
@@ -116,7 +116,7 @@
                 <div class="grid grid-cols-12 gap-6">
                     <!-- Web Development -->
                     <div class="col-span-12 sm:col-span-6 lg:col-span-4 group">
-                        <div class="bg-white rounded-lg shadow-sm p-6 text-center group-hover:bg-[#086ad7] duration-300">
+                        <div class="bg-white rounded-lg shadow-sm p-6 text-center group-hover:bg-[#086ad7] duration-300 h-full">
                            <div class="service-icon">
                               <i class="fas fa-code fa-2x text-[#086ad7] group-hover:text-zinc-700"></i> 
                            </div>
@@ -126,7 +126,7 @@
                     </div>
                     <!-- Web Design -->
                     <div class="col-span-12 sm:col-span-6 lg:col-span-4 group">
-                        <div class="bg-white rounded-lg shadow-sm p-6 text-center group-hover:bg-[#086ad7] duration-300">
+                        <div class="bg-white rounded-lg shadow-sm p-6 text-center group-hover:bg-[#086ad7] duration-300 h-full">
                            <div class="service-icon">
                               <i class="fas fa-desktop fa-2x text-[#086ad7] group-hover:text-zinc-700"></i>
                            </div>
@@ -136,7 +136,7 @@
                     </div>
                     <!-- UI/UX Design -->
                     <div class="col-span-12 sm:col-span-6 lg:col-span-4 group">
-                        <div class="bg-white rounded-lg shadow-sm p-6 text-center group-hover:bg-[#086ad7] duration-300">
+                        <div class="bg-white rounded-lg shadow-sm p-6 text-center group-hover:bg-[#086ad7] duration-300 h-full">
                            <div class="service-icon">
                               <i class="fas fa-pencil-ruler fa-2x text-[#086ad7] group-hover:text-zinc-700"></i>
                            </div>

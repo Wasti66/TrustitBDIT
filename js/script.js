@@ -44,13 +44,32 @@ window.addEventListener("scroll", () => {
 /* -- responsive --*/
 function toggleMenu() {
     const menu = document.getElementById('menu');
+    const icon = document.getElementById('menuIcon');
+
     menu.classList.toggle('hidden');
+
+    // icon change (bars ↔ close)
+    if (menu.classList.contains('hidden')) {
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+    } else {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-xmark');
+    }
 }
+
+/* mobile menu auto close when clicking link */
 document.querySelectorAll('#menu a').forEach(link => {
     link.addEventListener('click', () => {
         const menu = document.getElementById('menu');
+        const icon = document.getElementById('menuIcon');
+
         if (window.innerWidth < 1024) {
             menu.classList.add('hidden');
+
+            // reset icon
+            icon.classList.remove('fa-xmark');
+            icon.classList.add('fa-bars');
         }
     });
 });
