@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@layer base {
+  body {
+    @apply antialiased scroll-smooth overflow-x-hidden;
+  }
+
+  html {
+    @apply overflow-x-hidden scroll-smooth;
+  }
+}
+@layer components{
+     /* --- global css --- */   
+    .btn-common{
+        @apply self-start bg-[#086ad7] rounded-full px-4 md:px-8 py-2 md:py-4 text-white font-semibold hover:bg-black duration-300;
+    }
+    .heading-h3{
+        @apply text-2xl lg:text-3xl
+    }
+    .swiper-button-next svg,
+    .swiper-button-prev svg {
+       display: none !important;
+    }
+    /* -- header nav manu active -- */
+    .nav-link {
+        @apply text-white hover:text-[#086ad7] duration-300 font-medium;
+    }
+
+    .nav-active {
+        @apply text-[#086ad7] font-semibold;
+    }
+    /* --- home --- */
+    .hero-LeftRight-btn{
+        @apply opacity-0 group-hover:opacity-100 h-6 w-6 bg-white text-black rounded-lg group-hover:duration-300;
+    }
+    /* -- service icon --*/
+    .service-icon{
+        @apply h-20 w-20 flex items-center justify-center rounded-full bg-[#eef4fc] mx-auto
+    }
+}

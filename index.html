@@ -1,0 +1,310 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="images/logo.png" href="images/logo.png">
+        <title>Trustitbdltd Tasks</title>
+        <!-- Primary Meta Tags -->
+        <meta name="description" content="Trust-IT BD Ltd is a leading software development and IT enabled service provider in Bangladesh. We provide custom software, web development, mobile apps and digital solutions.">
+        <meta name="keywords" content="IT Company Bangladesh, Software Company Dhaka, Web Development Bangladesh, Custom Software, Mobile App Development, Trust-IT BD">
+        <meta name="author" content="Trust-IT BD Ltd">
+        <meta name="robots" content="index, follow">
+        <link href="./css/output.css" rel="stylesheet">
+        <!-- swiper js-->
+        <link href="./css/swiper-bundle.min.css" rel="stylesheet">
+        <!-- font awsome -->
+        <link href="./css/all.css" rel="stylesheet"> 
+        <!-- jquery -->
+        <script src="js/jquery.min.js"></script>
+        <!-- axios -->
+       <script src="js/axios.min.js"></script>
+    </head>
+    <body>
+       <!-- header -->
+       <header class="bg-[#211e3b] w-full fixed top-0 left-0 z-50 transition-all duration-300" id="affix-nav">
+            <nav class="container px-8 lg:px-0 mx-auto flex items-center justify-between">
+                <!-- logo -->
+                <a href="#">
+                    <img class="h-20 w-20" src="images/logo.png" alt="logo">
+                </a>
+                <!-- mobile button -->
+                <button onclick="toggleMenu()" class="text-white lg:hidden">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </button>
+                <!-- menu -->
+                <div id="menu"
+                    class="hidden lg:flex flex-col lg:flex-row lg:items-center ms-auto gap-x-4 gap-y-4 lg:gap-y-0 absolute lg:static top-20 left-0 w-full lg:w-auto bg-[#211e3b] lg:bg-transparent p-4 lg:p-0">
+                    <ul class="flex flex-col lg:flex-row items-start lg:items-center gap-x-4 gap-y-4 lg:gap-y-0">
+                        <li>
+                            <a class="nav-link nav-active" href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#service">Service</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#post">Post</a>
+                        </li>
+                    </ul>
+                    <div class="mt-4 lg:mt-0">
+                        <a href="#contact" class="btn-common">Contact Now</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+       <!-- main-->
+       <main>
+          <!-- hero section -->
+          <section id="home" class="relative h-[650px] md:h-[800px] overflow-hidden group">
+              <div class="swiper Hero h-full">
+                 <div class="swiper-wrapper">
+                    <!-- slider 1-->
+                    <div class="swiper-slide relative">
+                        <!-- hero image 1 -->
+                        <img src="images/hero-1.jpg" class="absolute inset-0 size-full object-cover" alt="IT solutions business growth banner" loading="eager" fetchpriority="high"> 
+                        <div class="absolute inset-0 bg-gradient-to-r from-[#211e3b] via-[#211e3b]/50 to-transparent"></div>
+                        <!-- content -->
+                        <div class="absolute inset-0 flex flex-col justify-center px-8 lg:px-16 gap-y-4 lg:gap-y-6">
+                                <!-- company name -->
+                                <h5 class="text-white heading-h3 font-semibold">Trust-IT BD Ltd</h5>
+                                <!-- heading -->
+                                <h1 class="text-white text-4xl md:text-5xl lg:text-7xl font-bold">Grow Your IT <br> Solutions Business.</h1> 
+                                <!-- short descreption -->
+                                <p class="text-white text-lg lg:text-xl w-full lg:w-1/2">Trust-IT (BD) Ltd is a software and IT enabled service provider in Bangladesh. With a lot of core Pro</p>
+                                <!-- Call-to-action button -->
+                                <a href="#contact" class="btn-common">Contact Now</a>
+                        </div>
+                    </div>
+                    <!-- slider 2-->
+                    <div class="swiper-slide relative">
+                        <!-- hero image 2 -->
+                        <img src="images/hero-2.jpg" class="absolute inset-0 size-full object-cover" alt="IT solutions business growth banner" loading="eager" fetchpriority="high"> 
+                        <div class="absolute inset-0 bg-gradient-to-r from-[#211e3b] via-[#211e3b]/50 to-transparent"></div>
+                        <!-- content -->
+                        <div class="absolute inset-0 flex flex-col justify-center px-8 lg:px-16 gap-y-4 lg:gap-y-6">
+                                <!-- company name -->
+                                <h5 class="text-white text-2xl lg:text-3xl font-semibold">Trust-IT BD Ltd</h5>
+                                <!-- heading -->
+                                <h2 class="text-white text-4xl md:text-5xl lg:text-7xl font-bold">Custom Software <br> Development</h2> 
+                                <!-- short descreption -->
+                                <p class="text-white text-lg lg:text-xl w-full lg:w-1/2">We build powerful, scalable and user-friendly software solutions tailored to your business needs.</p>
+                                <!-- Call-to-action button -->
+                                <a href="#" class="btn-common">Contact Now</a>
+                        </div>
+                    </div>
+                 </div>
+                 <!-- slider left and right button-->
+                <div class="swiper-button-next hero-LeftRight-btn">
+                    <i class="fa-solid fa-angle-right fa-2x"></i>
+                </div>
+                <div class="swiper-button-prev hero-LeftRight-btn">
+                    <i class="fa-solid fa-angle-left fa-2x"></i>
+                </div>
+              </div>
+          </section> 
+          <!-- service -->
+          <section id="service" class="py-16 bg-[#eef4fc]">
+             <div class="container m-auto px-8 lg:px-16">
+                <h3 class="heading-h3 capitalize font-bold text-center mb-12">service</h3>
+                <!-- grid -->
+                <div class="grid grid-cols-12 gap-6">
+                    <!-- Web Development -->
+                    <div class="col-span-12 sm:col-span-6 lg:col-span-4 group">
+                        <div class="bg-white rounded-lg shadow-sm p-6 text-center group-hover:bg-[#086ad7] duration-300">
+                           <div class="service-icon">
+                              <i class="fas fa-code fa-2x text-[#086ad7] group-hover:text-zinc-700"></i> 
+                           </div>
+                           <h3 class="heading-h3 capitalize font-bold text-zinc-700 my-4 group-hover:text-white">Web Development</h3>
+                           <p class="text-lg text-zinc-700 group-hover:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias adipisci excepturi earum, commodi quo voluptas, maxime a quibusdam minima, autem officiis. Harum delectus exercitationem iste adipisci explicabo minima porro quod?</p>
+                        </div>
+                    </div>
+                    <!-- Web Design -->
+                    <div class="col-span-12 sm:col-span-6 lg:col-span-4 group">
+                        <div class="bg-white rounded-lg shadow-sm p-6 text-center group-hover:bg-[#086ad7] duration-300">
+                           <div class="service-icon">
+                              <i class="fas fa-desktop fa-2x text-[#086ad7] group-hover:text-zinc-700"></i>
+                           </div>
+                           <h3 class="heading-h3 capitalize font-bold text-zinc-700 my-4 group-hover:text-white">Web Design</h3>
+                           <p class="text-lg text-zinc-700 group-hover:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias adipisci excepturi earum, commodi quo voluptas, maxime a quibusdam minima, autem officiis. Harum delectus exercitationem iste adipisci explicabo minima porro quod?</p>
+                        </div>
+                    </div>
+                    <!-- UI/UX Design -->
+                    <div class="col-span-12 sm:col-span-6 lg:col-span-4 group">
+                        <div class="bg-white rounded-lg shadow-sm p-6 text-center group-hover:bg-[#086ad7] duration-300">
+                           <div class="service-icon">
+                              <i class="fas fa-pencil-ruler fa-2x text-[#086ad7] group-hover:text-zinc-700"></i>
+                           </div>
+                           <h3 class="heading-h3 capitalize font-bold text-zinc-700 my-4 group-hover:text-white">UI/UX Design</h3>
+                           <p class="text-lg text-zinc-700 group-hover:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias adipisci excepturi earum, commodi quo voluptas, maxime a quibusdam minima, autem officiis. Harum delectus exercitationem iste adipisci explicabo minima porro quod?</p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+          </section> 
+          <!-- about --> 
+          <section id="about" class="py-16">
+             <div class="container m-auto px-8 lg:px-16">
+                <h3 class="heading-h3 capitalize font-bold text-center mb-12">about</h3>
+                <!-- grid -->
+                <div class="grid grid-cols-12 gap-6 items-center">
+                    <!-- Brief company introduction -->  
+                    <div class="col-span-12 lg:col-span-6 text-center lg:text-left">
+                        <h6 class="text-lg font-semibold text-[#086ad7] uppercase">about company</h6>
+                        <h4 class="heading-h3 capitalize font-bold text-zinc-700 my-4">20 Years Of Experience<br>In IT Solutions</h4>
+                        <p class="text-lg text-zinc-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio magni quisquam doloremque est, a cupiditate, neque culpa blanditiis harum sunt magnam hic aliquid ratione possimus earum unde quibusdam enim odio?</p>
+                    </div>
+                    <!-- company images -->
+                    <div class="col-span-12 lg:col-span-6 relative overflow-hidden">
+                        <!-- Blue Circle Background (Big & Soft) -->
+                        <div class="absolute -top-32 -left-32 w-[400px] h-[400px] bg-blue-600 rounded-full opacity-80"></div>
+                        <div class="absolute -bottom-32 -right-32 w-[400px] h-[400px] bg-blue-200 rounded-full opacity-80"></div>
+                        <!-- Top Image -->
+                        <div class="relative z-10 w-2/3 ml-auto">
+                            <img src="images/about-2.jpg" class="w-full rounded-xl shadow-lg" alt="Team discussion">
+                        </div>
+                        <!-- Bottom Image -->
+                        <div class="relative z-20 w-3/4 -mt-20">
+                            <img src="images/about.jpg" class="w-full rounded-xl shadow-xl" alt="IT team working">
+                        </div>
+                    </div>
+                </div>    
+             </div>
+          </section>
+          <!-- Contact Form --> 
+          <section id="contact" class="py-16 bg-[#eef4fc]">
+              <div class="container m-auto px-8 lg:px-16">
+                 <h3 class="heading-h3 capitalize font-bold text-center mb-12">Contact</h3>
+                 <!-- contact form -->
+                 <form onsubmit="return FormSubmit(event)" action="index.html" method="post">
+                    <!-- name -->
+                    <div>
+                        <label for="name" class="block mb-2 text-sm font-medium">Name</label>
+                        <input type="text" id="name" class="rounded-lg border  text-sm focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs" placeholder="Wasti" />
+                        <span id="ErrorName" class="text-sm text-red-500 ont-medium"></span>
+                    </div>
+                    <!-- email -->
+                    <div class="my-4">
+                        <label for="email" class="block mb-2 text-sm font-medium">Email</label>
+                        <input type="text" id="email" class="rounded-lg border  text-sm focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs" placeholder="08wasti@gmail.com" />
+                        <span id="ErrorEmail" class="text-sm text-red-500 ont-medium"></span>
+                    </div>
+                    <!-- message -->
+                    <div>
+                        <label for="message" class="block mb-2 text-sm font-medium">Message</label>
+                        <textarea type="text" id="message" class="rounded-lg border  text-sm focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs" rows="5" placeholder="Message....."></textarea>
+                        <span id="ErrorMessage" class="text-sm text-red-500 ont-medium"></span>
+                    </div>
+                    <button type="submit" class="btn-common cursor-pointer mt-4">Contact Now</button>
+                 </form>
+              </div>  
+          </section> 
+          <!-- Post --> 
+          <section id="post" class="py-16">
+              <div class="container m-auto px-8 lg:px-16">
+                 <h3 class="heading-h3 capitalize font-bold text-center mb-12">Post</h3>
+                 <!-- API Data Container: Posts will be fetched via Axios and rendered here -->
+                <div class="grid grid-cols-12 gap-6" id="ITPost">
+                     
+                </div>
+                <!-- loar more -->
+                <div class="text-center mt-6">
+                        <button onclick="loadMore()" class="btn-common">Load More</button>
+                </div>
+              </div>  
+          </section>
+       </main>
+       <!-- footer --> 
+       <footer class="py-16 bg-[#211e3b]">
+          <div class="container m-auto px-8 lg:px-16">
+             <div class="grid grid-cols-12 gap-6">
+                <!-- logo -->
+                <div class="col-span-12 md:col-span-6 lg:col-span-3">
+                    <div class="mb-4">
+                        <a href="#">
+                          <img class="h-20 w-20" src="images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <p class="text-white font-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora ut id tenetur atque voluptatibus, a, reprehenderit omnis odit facere, eligendi voluptate ab! Voluptas aliquam optio minus cupiditate id minima in.</p>
+                </div>
+                <!-- -->
+                <div class="col-span-12 md:col-span-6 lg:col-span-3">
+                    <h5 class="text-lg lg:text-2xl font-bold text-white mb-4">Company</h5>
+                    <ul class="flex flex-col gap-y-4">
+                        <li>
+                            <a class="text-white hover:text-[#086ad7] duration-300 font-medium" href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a class="text-white hover:text-[#086ad7] duration-300 font-medium" href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a class="text-white hover:text-[#086ad7] duration-300 font-medium" href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a class="text-white hover:text-[#086ad7] duration-300 font-medium" href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a class="text-white hover:text-[#086ad7] duration-300 font-medium" href="#">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- -->
+                <div class="col-span-12 md:col-span-6 lg:col-span-3">
+                    <h5 class="text-lg lg:text-2xl font-bold text-white mb-4">Company</h5>
+                    <ul class="flex flex-col gap-y-4">
+                        <li>
+                            <a class="text-white hover:text-[#086ad7] duration-300 font-medium" href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a class="text-white hover:text-[#086ad7] duration-300 font-medium" href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a class="text-white hover:text-[#086ad7] duration-300 font-medium" href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a class="text-white hover:text-[#086ad7] duration-300 font-medium" href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a class="text-white hover:text-[#086ad7] duration-300 font-medium" href="#">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- -->
+                <div class="col-span-12 md:col-span-6 lg:col-span-3">
+                    <h5 class="text-lg lg:text-2xl font-bold text-white mb-4">Company</h5>
+                    <ul class="flex flex-col gap-y-4">
+                        <li>
+                            <a class="text-white hover:text-[#086ad7] duration-300 font-medium" href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a class="text-white hover:text-[#086ad7] duration-300 font-medium" href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a class="text-white hover:text-[#086ad7] duration-300 font-medium" href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a class="text-white hover:text-[#086ad7] duration-300 font-medium" href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a class="text-white hover:text-[#086ad7] duration-300 font-medium" href="#">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+             </div>
+          </div>
+          <!-- scroll top -->
+          <div class="scrollToTopBtn fixed bottom-4 right-4 z-40 h-10 w-10 grid place-items-center rounded-full border-2 border-black bg-white shadow cursor-pointer group">
+            <i class="fa-solid fa-arrow-up text-sm group-hover:text-[#086ad7]"></i>
+          </div>
+       </footer> 
+       <!-- script js -->
+       <script src="js/script.js"></script>
+       <script src="js/swiper-bundle.min.js"></script>
+       
+    </body>
+</html>
